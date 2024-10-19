@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wander Venture</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f9c49325e6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="menu-bar">
+            <div class="logo">
+                <img src="image/wander-venture-high-resolution-logo-transparent (2).png" alt="">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT US</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#trips">TRIPS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#news">NEWS</a></li>
+            </ul>
+            <div class="burger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home" class="hero">
+            <h1>Wander Venture</h1>
+            <h2>EXPLORE THE WORLD</h2>
+            <a href="#about" class="btn">Let's Explore</a>
+            <p class="description">
+                Welcome to Wander Venture, your gateway to unforgettable travel experiences. Whether you're seeking
+                thrilling adventures, serene escapes, or cultural immersions, we offer expertly curated trips
+                tailored to your desires. Discover the joy of exploring new places and making lifelong memories.
+            </p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="social-icons">
+            <a style="color: #C13584;" href="#"><i class="fa-brands fa-instagram"></i></a> 
+            <a style="color: #1877F2;" href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a style="color: #FEE34A;" href="#"><i class="fa-brands fa-google"></i></a>
+            <a style="color: #25D366;" href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <p>&copy; 2024 Wander Venture. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript for responsive navigation
+        document.querySelector('.burger').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('nav-active');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('uni.png'); 
+    background-size: cover;
+    background-position: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .calculator {
+    width: 100%;
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .calculator-title {
+    text-align: center;
+    font-size: 1.5em;
+    padding: 10px;
+    background-color: #222;
+    color: #fff;
+    border-bottom: 10px solid #18016f;
+  }
+  
+  .display {
+    background-color: #222;
+    color: #fff;
+    font-size: 2.5em;
+    padding: 20px;
+    text-align: right;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  .buttons {
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  button {
+    flex: 1 1 20%;
+    padding: 15px;
+    margin: 5px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    box-sizing: border-box;
+  }
+  
+  button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  button:active {
+    background-color: #ccc;
+  }
+  
+  button.equals {
+    flex: 1 1 100%;
+    background-color: #18016f;
+    color: #fff;
+  }
+  
+  button.equals:hover {
+    background-color: #18016f;
+  }
+  
+  /* Media queries for different screen sizes */
+  @media (max-width: 600px) {
+    .display {
+      font-size: 1.8em;
+      padding: 15px;
+    }
+  
+    button {
+      padding: 10px;
+      font-size: 1em;
+    }
+  
+    button.equals {
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .display {
+      font-size: 1.5em;
+      padding: 10px;
+    }
+  
+    button {
+      padding: 8px;
+      font-size: 0.9em;
+    }
+  
+    button.equals {
+      padding: 10px;
+    }
+  }
+  
